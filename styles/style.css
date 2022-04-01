@@ -89,6 +89,12 @@ span.nowrap {
 }
 
 
+a.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
+
 .content {
   box-sizing: border-box;
 
@@ -114,11 +120,17 @@ span.nowrap {
   border-width: 0 2px 0 0;
   border-style: solid;
   border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--pink) 25%, var(--pink) 75%, rgba(255, 255, 255, 0) 100%) 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+
 }
 
 
 
-.navbar li, .navbar a {
+.navbar a {
   text-align: right;
   font-size: 2.4vw;
   font-family: mini-wakuwaku, sans-serif;
@@ -126,12 +138,7 @@ span.nowrap {
   color: var(--lightblue);
 }
 
-.navbar li::marker {
-  content: "";
-  list-style-type: none;
-}
-
-.navbar li:hover{
+.navbar a:hover{
   color: var(--darkblue);
 }
 
@@ -213,32 +220,31 @@ span.nowrap {
     position: sticky;
     top: 0px;
 
-
     border-width: 0 0 2px 0;
     border-style: solid;
     border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--pink) 25%, var(--pink) 75%, rgba(255, 255, 255, 0) 100%) 1;
 
     background-color: var(--white);
 
-
-  }
-
-  .navbar ul {
     padding: 0;
     margin: 0;
-    display: flex;
+
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
-  .navbar li, .navbar a {
-    text-align: center;
+  .navbar a {
     font-size: 5vw;
   }
 
   .content {
     width: 100%;
 
+  }
+
+  a.anchor {
+    top: -60px;
   }
 
 
