@@ -1,0 +1,98 @@
+
+.landing-screen {
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  width: 100vw;
+
+
+  background-color: #E59FAC;
+  background: var(--gradient);
+
+  padding: 5% 15% 2% 15%;
+}
+
+.landing-screen li::marker{
+  color: var(--white);
+}
+
+.landing-container{
+  display: flex;
+}
+
+.landing-part{
+  width: 50%;
+  box-sizing: border-box;
+  /* border: 1px red solid; */
+}
+
+.landing-left {
+
+}
+
+
+
+.landing-footer {
+  width: 100%;
+  padding-top: 50px;
+  /* border: 1px blue solid; */
+  clear:both;
+}
+
+@keyframes float {
+  0% {top: 0px;}
+  50% {top: -10px;}
+  100% {top: 0px}
+}
+
+.landing-footer p {
+  text-align: center;
+  color: var(--white);
+  animation: float 1.5s linear infinite forwards running;
+  position: relative
+
+}
+
+.big-logo {
+  width: 60%;
+  display: block;
+  margin: 3% auto;
+
+}
+
+.logo-h1 {
+  color: var(--white);
+  font-size: 6em;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: 3% auto;
+}
+
+
+
+.landing-right {
+  padding: 15% 2%;
+  /* border: red 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.internal-container {
+  /* border: blue 1px solid; */
+
+
+}
+
+.links-h1 {
+  color: var(--lightpurple);
+  font-size: 2.5em;
+  overflow-wrap: break-word;
+  margin: 3% auto;
+  text-decoration: none;
+}
+
+.links-h1:hover{
+  color: var(--white);
+  text-decoration: none;
+}
