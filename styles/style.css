@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
 @font-face {
     font-family: mini-wakuwaku;
-    src: url("mini-wakuwaku.otf") format("opentype");
+    src: url("mini-wakuwaku.otf");
 }
 
 :root {
@@ -34,11 +34,15 @@ body {
 
 h1, h2, h3 {
   font-family: mini-wakuwaku, sans-serif;
-  color: var(--darkblue);
 }
 
 h1 {
   font-size: 42px;
+  color: var(--pink);
+}
+
+h2 {
+  color: var(--darkblue);
 }
 
 body {
@@ -75,11 +79,14 @@ li:hover::marker {
 hr {
   border-width-top: 2px;
   border-style: solid;
-  border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--lightblue) 25%, var(--lightblue) 75%, rgba(255, 255, 255, 0) 100%) 1;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--darkblue) 25%, var(--darkblue) 75%, rgba(255, 255, 255, 0) 100%) 1;
 
 }
 
+span.nowrap {
+  white-space:nowrap;
 
+}
 
 
 .content {
@@ -113,7 +120,7 @@ hr {
 
 .navbar li, .navbar a {
   text-align: right;
-  font-size: 32px;
+  font-size: 2.4vw;
   font-family: mini-wakuwaku, sans-serif;
   line-height: 50px;
   color: var(--lightblue);
@@ -121,6 +128,7 @@ hr {
 
 .navbar li::marker {
   content: "";
+  list-style-type: none;
 }
 
 .navbar li:hover{
@@ -169,4 +177,71 @@ hr {
 ::-webkit-scrollbar-thumb:hover {
   border: 2px solid var(--darkblue);
   box-shadow: inset 0 0 6px var(--darkblue);
+}
+
+
+@media (max-aspect-ratio: 8/5)
+{
+
+  .container {
+    width: 95%;
+  }
+
+  .navbar li, .navbar a {
+    text-align: center;
+    font-size: 2.8vw;
+  }
+
+
+}
+
+
+@media (max-aspect-ratio: 1/1)
+{
+
+  .container {
+    display: block;
+  }
+
+
+  .navbar {
+    padding: 5px 0;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    position: sticky;
+    top: 0px;
+
+
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--pink) 25%, var(--pink) 75%, rgba(255, 255, 255, 0) 100%) 1;
+
+    background-color: var(--white);
+
+
+  }
+
+  .navbar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar li, .navbar a {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .content {
+    width: 100%;
+
+  }
+
+
+
+
 }

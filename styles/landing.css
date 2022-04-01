@@ -62,7 +62,7 @@
 
 .logo-h1 {
   color: var(--white);
-  font-size: 6em;
+  font-size: 7vw;
   overflow-wrap: break-word;
   text-align: center;
   margin: 3% auto;
@@ -86,7 +86,7 @@
 
 .links-h1 {
   color: var(--lightpurple);
-  font-size: 2.5em;
+  font-size: 3vw;
   overflow-wrap: break-word;
   margin: 3% auto;
   text-decoration: none;
@@ -95,4 +95,56 @@
 .links-h1:hover{
   color: var(--white);
   text-decoration: none;
+}
+
+
+
+
+
+@media (max-aspect-ratio: 8/5)
+{
+  .landing-screen {
+    padding: 5% 5% 2% 5%;
+  }
+
+  .big-logo {
+    width: 80%;
+  }
+
+
+  .links-h1 {
+    font-size: 5vw;
+
+  }
+}
+
+@media (max-aspect-ratio: 1/1)
+{
+  .landing-container {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .landing-part {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 2vh;
+  }
+
+  .big-logo {
+    width: 40%;
+  }
+
+  .links-h1 {
+    text-align: center;
+    font-size: 5vh;
+
+  }
+
+  .logo-h1 {
+    font-size: 7vh;
+  }
+
+
+
 }
