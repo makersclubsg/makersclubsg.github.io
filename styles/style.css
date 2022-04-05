@@ -171,11 +171,14 @@ a.anchor {
   background-image: var(--gradient);
 }
 
-.banner h1 {
-  font-size: 7vw;
+.banner h1, .logo-h1 {
+
   color: var(--white);
+  font-size: 7vw;
+  overflow-wrap: break-word;
   text-align: center;
   margin: 10px 0;
+
 }
 
 
@@ -282,6 +285,11 @@ a.anchor {
 
   a.anchor {
     top: -60px;
+  }
+
+
+  .banner h1, .logo-h1 {
+    font-size: 7vh;
   }
 
 
