@@ -110,10 +110,12 @@
 .card {
   flex-basis: calc(33.3% - 0.5em);
   min-height: 350px;
-  border: 6px var(--pink) solid;
+  border: 6px var(--lightblue) solid;
   border-radius: 25px;
   box-sizing: border-box;
   background-color: var(--lightpurple);
+  background-image: var(--gradient-trans);
+  background-opacity: 0.7;
 
   padding: 10px 20px;
 }

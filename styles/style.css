@@ -11,7 +11,9 @@
   --pink: #E59FAC;
   --white: #FFFFFF;
   --black: #09050B;
-  --gradient: linear-gradient(70deg, var(--lightblue) 0%, var(--pink) 100%);
+  --gradient: linear-gradient(70deg, var(--lightblue), var(--pink));
+  --gradient-trans: linear-gradient(70deg, #a9b3ce55, #E59FAC55);
+
   --gradient-rainbow: linear-gradient(to bottom, #ffcaca 0%, #ffedc1 20%, #feffb8 40%, #c4ffcb 60%, #add8ff 80%,  #ccafe9 100%);
   --gradient-rainbow-right: linear-gradient(to right, #ffcaca 0%, #ffedc1 20%, #feffb8 40%, #c4ffcb 60%, #add8ff 80%,  #ccafe9 100%);
 
