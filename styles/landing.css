@@ -145,6 +145,51 @@
     font-size: 7vh;
   }
 
+}
 
 
+
+
+.scrollbar {
+  display: flex;
+  /* border: 1px purple solid; */
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: space-between;
+
+}
+
+.card {
+  flex-basis: calc(33.3% - 0.5em);
+  min-height: 350px;
+  border: 6px var(--pink) solid;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: var(--lightpurple);
+
+  padding: 10px 20px;
+}
+
+
+.scrollbar::-webkit-scrollbar-track {
+  background-image: var(--gradient-rainbow-right);
+}
+
+.card img{
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  border-radius: 200px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.card p {
+  font-size: 16px;
 }

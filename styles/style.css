@@ -13,6 +13,8 @@
   --black: #09050B;
   --gradient: linear-gradient(70deg, var(--lightblue) 0%, var(--pink) 100%);
   --gradient-rainbow: linear-gradient(to bottom, #ffcaca 0%, #ffedc1 20%, #feffb8 40%, #c4ffcb 60%, #add8ff 80%,  #ccafe9 100%);
+  --gradient-rainbow-right: linear-gradient(to right, #ffcaca 0%, #ffedc1 20%, #feffb8 40%, #c4ffcb 60%, #add8ff 80%,  #ccafe9 100%);
+
 
 }
 
@@ -53,6 +55,10 @@ body {
 p, ul, li, ol, a {
   font-size: 20px;
   color: var(--black);
+}
+
+ul, ol {
+  margin-top: 10px;
 }
 
 a {
@@ -158,6 +164,37 @@ a.anchor {
   display: flex;
 }
 
+.banner {
+  width: 100vw;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-image: var(--gradient);
+}
+
+.banner h1 {
+  font-size: 7vw;
+  color: var(--white);
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.footer {
+  width: 100vw;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-image: var(--gradient);
+}
+
+.footer p, .footer a {
+  font-size: 16px;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer a:hover::after{
+  content: none
+}
 
 
 ::-webkit-scrollbar {
