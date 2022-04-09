@@ -65,16 +65,43 @@ ul, ol {
 
 a {
   text-decoration: none;
+
 }
 
-p a:hover {
-  text-decoration: underline;
+.content a {
+  display: inline-block;
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+  transition: linear 0.2s;
 }
 
-a[target="_blank"]:hover::after {
-    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
-    margin: 0 3px 0 5px;
+.content a:hover {
+  color: var(--darkblue);
 }
+
+
+.content a[target="_blank"]:hover::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+
+.content a:before {
+  background: var(--gradient);
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: -1.5px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s ease-in-out;
+}
+
+.content a:hover:before{
+  width: 0;
+}
+
 
 li::marker{
   content: "★ ";
