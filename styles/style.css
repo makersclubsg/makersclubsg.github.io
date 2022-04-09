@@ -218,7 +218,7 @@ a.anchor {
 
 .footer {
   width: 100vw;
-  padding: 30px 0;
+  padding: 30px 20px;
   box-sizing: border-box;
   background-image: var(--gradient);
 }
@@ -229,8 +229,16 @@ a.anchor {
   color: var(--white);
 }
 
+.footer a {
+  border-bottom: 2px solid var(--lightpurple);
+}
+
 .footer a:hover::after{
   content: none
+}
+
+.footer a:hover {
+  color: var(--lightpurple);
 }
 
 
