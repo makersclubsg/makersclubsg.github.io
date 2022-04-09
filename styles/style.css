@@ -59,6 +59,11 @@ p, ul, li, ol, a {
   color: var(--black);
 }
 
+.content p::selection {
+  color: var(--darkblue);
+  background-color: var(--lightpurple);
+}
+
 ul, ol {
   margin-top: 10px;
 }
