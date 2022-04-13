@@ -70,7 +70,7 @@ ul, ol {
 
 a {
   text-decoration: none;
-
+  font-size: inherit;
 }
 
 .content a {

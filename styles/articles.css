@@ -1,0 +1,22 @@
+.subtitle {
+  font-size: 16px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+.tag {
+  position: relative;
+  padding: 3px 10px;
+  margin: 0px 2px;
+  /* color: var(--white); */
+  /* background-color: var(--pink); */
+  background-image: var(--gradient-trans);
+  border: 2.5px var(--lightblue) solid;
+  border-radius: 25px;
+  transition: top ease 0.2s;
+}
+
+.tag:hover {
+  top: 2px;
+}
