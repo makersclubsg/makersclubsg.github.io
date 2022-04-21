@@ -57,7 +57,7 @@ for f in glob.iglob('markdown_content/*.md'):
                 body += line + "\n\n"
 
     file_name = os.path.basename(f)
-    destination = os.path.join("article", title + ".html")
+    destination = os.path.join("article", title.lower() + ".html")
 
     with open(destination, 'w') as file:
         output = template
@@ -78,6 +78,9 @@ for f in glob.iglob('markdown_content/*.md'):
         article_data[title] = {}
     article_data[title]["title"] = title
     article_data[title]["index"] = int(os.path.splitext(file_name)[0].split('_')[0])
+    article_data[title]["tags"] = tags
+    article_data[title]["authors"] = authors
+
 
     json_string = json.dumps(author_data)
 

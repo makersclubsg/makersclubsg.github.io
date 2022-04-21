@@ -1,7 +1,6 @@
 ^title Introduction
 ^authors Tongyu
 ^tags Admin
-^category article
 
 # Welcome to Maker's Club!
 
