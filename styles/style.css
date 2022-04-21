@@ -176,6 +176,7 @@ a.anchor {
   font-family: mini-wakuwaku, sans-serif;
   line-height: 50px;
   color: var(--lightblue);
+  transition: linear 0.2s;
 }
 
 .navbar a:hover{

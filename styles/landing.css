@@ -86,6 +86,7 @@
   overflow-wrap: break-word;
   margin: 3% auto;
   text-decoration: none;
+  transition: linear 0.2s;
 }
 
 .links-h1:hover{
