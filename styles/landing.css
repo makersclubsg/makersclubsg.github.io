@@ -144,6 +144,25 @@
 }
 
 
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.role {
+  padding: 4px 4px 1px 4px;
+  background-color: var(--pink);
+  border-radius: 5px;
+
+  font-weight: bold;
+  color: var(--lightpurple);
+}
+
+.role.co-chair {
+  background-color: var(--darkblue);
+}
 
 
 
