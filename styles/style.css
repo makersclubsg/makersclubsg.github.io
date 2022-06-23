@@ -165,6 +165,7 @@ a.anchor {
   flex-direction: column;
   justify-content: space-around;
   align-items: end;
+  background-color: var(--white);
 
 }
 
