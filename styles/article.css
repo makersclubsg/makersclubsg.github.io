@@ -1,7 +1,14 @@
+.banner h1 {
+  font-size: 5vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .subtitle {
   font-size: 16px;
-  margin-top: 0;
+  margin-top: 5px;
   padding-top: 0;
+  margin-left: -3px;
 }
 
 
@@ -19,4 +26,8 @@
 
 .tag:hover {
   top: 2px;
+}
+
+.article-body img {
+  width: 90%;
 }
