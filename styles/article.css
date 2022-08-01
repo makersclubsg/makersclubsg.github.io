@@ -1,0 +1,45 @@
+.banner h1 {
+  font-size: 5vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-top: 5px;
+  padding-top: 0;
+  margin-left: -3px;
+}
+
+
+.tag {
+  position: relative;
+  padding: 3px 10px;
+  margin: 0px 2px;
+  /* color: var(--white); */
+  /* background-color: var(--pink); */
+  background-image: var(--gradient-trans);
+  border: 2.5px var(--lightblue) solid;
+  border-radius: 25px;
+  transition: top ease 0.2s;
+}
+
+.tag:hover {
+  top: 2px;
+}
+
+.article-body img {
+  width: 90%;
+}
+
+
+
+@media (max-aspect-ratio: 1/1)
+{
+
+  .article-body img {
+    width: 100%;
+  }
+
+
+}

@@ -68,9 +68,13 @@ ul, ol {
   margin-top: 10px;
 }
 
+ul p, ol p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
-
+  font-size: inherit;
 }
 
 .content a {
@@ -91,7 +95,7 @@ a {
   margin: 0 3px 0 5px;
 }
 
-.content a:before {
+.content p a:before {
   background: var(--gradient);
   content: '';
   height: 2px;
@@ -103,7 +107,7 @@ a {
   transition: width 0.2s ease-in-out;
 }
 
-.content a:hover:before{
+.content p a:hover:before{
   width: 0;
 }
 
