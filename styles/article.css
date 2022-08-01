@@ -31,3 +31,15 @@
 .article-body img {
   width: 90%;
 }
+
+
+
+@media (max-aspect-ratio: 1/1)
+{
+
+  .article-body img {
+    width: 100%;
+  }
+
+
+}
